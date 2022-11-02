@@ -2,80 +2,16 @@ const tweets = [
   {
     username: "bobesponja",
     tweet: "eu amo o hub",
-  },
-  {
-    username: "bobesponja",
-    tweet: "eu amo o hub",
   },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
+    username: "spongebob",
+    tweet: "cadê o gary",
   },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
+    username: "mrSponge",
+    tweet: "água de coco, cervejinha 😳",
   },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },{
-    username: "bobesponja",
-    tweet: "eu amo o hub",
-  },
+    username: 'mrPink',
+    tweet: 'alô mr.Pix'
+  }
 ];
 
 export default tweets;

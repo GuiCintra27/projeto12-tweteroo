@@ -5,10 +5,22 @@ import tweets from "./tweets.js";
 
 const app = express();
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.post("/sign-up", (req, res) =>{
+  users.push(req.body)
+  res.send('OK');
+});
+
+app.post("/tweets", (req, res) =>{
+  tweets.push(req.body)
+  res.send('OK');
+});
 
 app.get("/tweets", (req, res) => {
   const showTweets = [];
-  for (let i = 0; i < 10 && tweets[i] !== undefined; i++){
+  for (let i = 0; i < 100 && tweets[i] !== undefined; i++){
     const tweetUserImg = users.find((item) => item.username === tweets[i].username);
     showTweets.push(
       {
