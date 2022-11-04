@@ -9,13 +9,35 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/sign-up", (req, res) =>{
-  users.push(req.body)
-  res.send('OK');
+  const {username, avatar} = req.body;
+
+  if (!username || !avatar){
+    return res.status(400).send('Todos os campos são obrigatórios!');
+  }
+
+  const register = {
+    username,
+    avatar
+  };
+
+  users.push(register);
+  res.sendStatus(201);
 });
 
 app.post("/tweets", (req, res) =>{
-  tweets.push(req.body)
-  res.send('OK');
+  const {username, tweet} = req.body;
+
+  if (!username || !tweet){
+    return res.status(400).send('Todos os campos são obrigatórios!');
+  }
+
+  const newTweet = {
+    username,
+    tweet
+  };
+
+  tweets.push(newTweet);
+  res.sendStatus(201);
 });
 
 app.get("/tweets", (req, res) => {
@@ -31,22 +53,6 @@ app.get("/tweets", (req, res) => {
     );
   }
   res.send(showTweets);
-});
-
-app.get("/holidays/:month", (req, res) => {
-  const month = req.params.month;
-  const isHoliday = holidays.filter((item) => {
-    if (item.date[1] !== '/') {
-      if (item.date.substring(0,2) === month) {
-        return item;
-      }
-    } else {
-      if (item.date[0] === month) {
-        return item;
-      }
-    }
-  });
-  res.send(isHoliday);
 });
 
 app.listen(5000);
