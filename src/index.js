@@ -42,7 +42,7 @@ app.post("/tweets", (req, res) =>{
 
 app.get("/tweets", (req, res) => {
   const showTweets = [];
-  for (let i = 0; i < 100 && tweets[i] !== undefined; i++){
+  for (let i = 0; i < 10 && tweets[i] !== undefined; i++){
     const tweetUserImg = users.find((item) => item.username === tweets[i].username);
     showTweets.push(
       {
